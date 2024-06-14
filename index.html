@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Borcelle - Smart Farming</title>
+<link rel="stylesheet" href="styles.css">
+<script src="https://kit.fontawesome.com/e5b4bf1a4b.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<header>
+    <div class="logo">
+        <img src="/Resources/logo.png" alt="Orfarm Logo">
+        <span><b>Orfarm</b></span>
+    </div>
+
+    <nav id="nav">
+        <ul class="nav-links" id="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#products">Products</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+            <li><a href="#get-started" class="get-started-btn">Get Started</a></li>
+            <i class="fa-regular fa-circle-xmark fas" onclick="closemenu()"></i>
+        </ul>
+        <i class="fa-solid fa-bars fas" onclick="openmenu()"></i>
+    </nav>
+
+
+
+</header>
+<section class="hero">
+    <div class="hero-content">
+        <h1>Reap the benefits of organic farming</h1>
+        <p>Healthier crops, sustainable practices, and a greener future</p>
+        <a href="" class="learn-more-btn">Learn More at Orfarm.com</a>
+    </div>
+</section>
+<script>
+  var sidemeu = document.getElementById("nav-links");
+function openmenu(){
+    sidemeu.style.right = "0";
+}        
+function closemenu(){
+    sidemeu.style.right = "-300px";
+}     
+</script>
+</body>
+</html>
+
